@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		D7BD1CE414BF96E8009BB7BC /* Compile */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D7BD1CF214BF96E8009BB7BC /* Build configuration list for PBXAggregateTarget "Compile" */;
+			buildPhases = (
+				D7BD1CE314BF96E8009BB7BC /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Compile;
+			productName = Compile;
+		};
+		D7BD1CE614BF96E8009BB7BC /* Upload Duemilanove */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D7BD1CF514BF96E8009BB7BC /* Build configuration list for PBXAggregateTarget "Upload Duemilanove" */;
+			buildPhases = (
+				D7BD1CE514BF96E8009BB7BC /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Upload Duemilanove";
+			productName = "Upload Duemilanove";
+		};
+		D7BD1CE814BF96E8009BB7BC /* Upload Uno */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D7BD1CF814BF96E8009BB7BC /* Build configuration list for PBXAggregateTarget "Upload Uno" */;
+			buildPhases = (
+				D7BD1CE714BF96E8009BB7BC /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Upload Uno";
+			productName = "Upload Uno";
+		};
+		D7BD1CEA14BF96E8009BB7BC /* Clean */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D7BD1CFB14BF96E8009BB7BC /* Build configuration list for PBXAggregateTarget "Clean" */;
+			buildPhases = (
+				D7BD1CE914BF96E8009BB7BC /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Clean;
+			productName = Clean;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXFileReference section */
+		D7A0B1C814BFF45300ACD1A0 /* PS-ITG-3200-00-01.4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "PS-ITG-3200-00-01.4.pdf"; path = "Documentation/PS-ITG-3200-00-01.4.pdf"; sourceTree = "<group>"; };
+		D7BD1CEC14BF96E8009BB7BC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D7BD1CED14BF96E8009BB7BC /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		D7BD1D0014BFC197009BB7BC /* ITG3200.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ITG3200.cpp; path = ../../../libraries/ITG3200/ITG3200.cpp; sourceTree = "<group>"; };
+		D7BD1D0114BFC197009BB7BC /* ITG3200.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ITG3200.h; path = ../../../libraries/ITG3200/ITG3200.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		D7BD1CDC14BF96E8009BB7BC = {
+			isa = PBXGroup;
+			children = (
+				D7BD1CEB14BF96E8009BB7BC /* ITG3200 */,
+			);
+			sourceTree = "<group>";
+		};
+		D7BD1CEB14BF96E8009BB7BC /* ITG3200 */ = {
+			isa = PBXGroup;
+			children = (
+				D7BD1CEC14BF96E8009BB7BC /* main.cpp */,
+				D7BD1D0114BFC197009BB7BC /* ITG3200.h */,
+				D7BD1D0014BFC197009BB7BC /* ITG3200.cpp */,
+				D7BD1CED14BF96E8009BB7BC /* Makefile */,
+				D7BD1CEE14BF96E8009BB7BC /* Documentation */,
+			);
+			path = ITG3200;
+			sourceTree = "<group>";
+		};
+		D7BD1CEE14BF96E8009BB7BC /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				D7A0B1C814BFF45300ACD1A0 /* PS-ITG-3200-00-01.4.pdf */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		D7BD1CDE14BF96E8009BB7BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Georgia Institute Technology";
+			};
+			buildConfigurationList = D7BD1CE114BF96E8009BB7BC /* Build configuration list for PBXProject "ITG3200" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D7BD1CDC14BF96E8009BB7BC;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7BD1CE414BF96E8009BB7BC /* Compile */,
+				D7BD1CE614BF96E8009BB7BC /* Upload Duemilanove */,
+				D7BD1CE814BF96E8009BB7BC /* Upload Uno */,
+				D7BD1CEA14BF96E8009BB7BC /* Clean */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D7BD1CE314BF96E8009BB7BC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake compile\nexit 0";
+		};
+		D7BD1CE514BF96E8009BB7BC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake BOARD=\"atmega328\" upload\nexit 0";
+		};
+		D7BD1CE714BF96E8009BB7BC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake BOARD=\"uno\" upload\nexit 0";
+		};
+		D7BD1CE914BF96E8009BB7BC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake clean\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D7BD1CF014BF96E8009BB7BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		D7BD1CF114BF96E8009BB7BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		D7BD1CF314BF96E8009BB7BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7BD1CF414BF96E8009BB7BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D7BD1CF614BF96E8009BB7BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7BD1CF714BF96E8009BB7BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D7BD1CF914BF96E8009BB7BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7BD1CFA14BF96E8009BB7BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D7BD1CFC14BF96E8009BB7BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7BD1CFD14BF96E8009BB7BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7BD1CE114BF96E8009BB7BC /* Build configuration list for PBXProject "ITG3200" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7BD1CF014BF96E8009BB7BC /* Debug */,
+				D7BD1CF114BF96E8009BB7BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7BD1CF214BF96E8009BB7BC /* Build configuration list for PBXAggregateTarget "Compile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7BD1CF314BF96E8009BB7BC /* Debug */,
+				D7BD1CF414BF96E8009BB7BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7BD1CF514BF96E8009BB7BC /* Build configuration list for PBXAggregateTarget "Upload Duemilanove" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7BD1CF614BF96E8009BB7BC /* Debug */,
+				D7BD1CF714BF96E8009BB7BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7BD1CF814BF96E8009BB7BC /* Build configuration list for PBXAggregateTarget "Upload Uno" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7BD1CF914BF96E8009BB7BC /* Debug */,
+				D7BD1CFA14BF96E8009BB7BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7BD1CFB14BF96E8009BB7BC /* Build configuration list for PBXAggregateTarget "Clean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7BD1CFC14BF96E8009BB7BC /* Debug */,
+				D7BD1CFD14BF96E8009BB7BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7BD1CDE14BF96E8009BB7BC /* Project object */;
+}
