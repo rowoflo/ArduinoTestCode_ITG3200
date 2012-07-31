@@ -95,7 +95,7 @@
 		D7BD1CDE14BF96E8009BB7BC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Georgia Institute Technology";
 			};
 			buildConfigurationList = D7BD1CE114BF96E8009BB7BC /* Build configuration list for PBXProject "ITG3200" */;
